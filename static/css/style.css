@@ -1,0 +1,295 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*********** Classes ***********/
+
+body {
+    height: 100%;
+    margin: 0;
+ }
+ 
+ .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+ }
+ 
+ .navigation-right {
+    margin-left: auto;
+ }
+ 
+ .navigation-button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: border 0.3s ease;
+    font-size: 20px;
+    padding: 12px;
+ }
+ 
+ .navigation-button:hover {
+    background-color:honeydew;
+ }
+ 
+ @font-face {
+    font-family: 'Moret';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Moret'), url('https://fonts.cdnfonts.com/s/92674/Moret-Semibold.woff') format('woff');
+ }
+ 
+ .root {
+    font-family: 'Moret', sans-serif;
+ }
+ 
+ .describe {
+    font-size: 50px;
+    word-wrap: break-word;
+    white-space: normal;
+    /* margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 5%; */
+    margin-right: 10%;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 10;
+ }
+ 
+ .orange-text {
+    color: rgb(235, 76, 11);
+ }
+ 
+ .white-text {
+    color: rgb(255, 255, 255);
+ }
+ 
+ .row {
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ .column {
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ .add-background {
+    background-image: url(../images/home_page_background.svg);
+    background-repeat: no-repeat;
+    background-position: right 21.75% bottom 45%;
+ }
+ 
+ .align-center {
+    align-content: center;
+    align-items: center;
+ }
+ 
+ .justify-center {
+    justify-content: center;
+ }
+ 
+ .justify-space-between {
+    justify-content: space-between;
+ }
+ 
+ .text-center {
+    text-align: center;
+ }
+ 
+ .text-left {
+    text-align: left;
+ }
+ 
+ .text-right {
+    text-align: right;
+ }
+ 
+ .border {
+    outline: 3px solid black;
+ }
+ 
+ .flex-80 {
+    flex: 0 0 80%;
+ }
+ 
+ .flex-70 {
+    flex: 0 0 70%;
+ }
+ 
+ .flex-60 {
+    flex: 0 0 60%;
+ }
+ 
+ .flex-40 {
+    flex: 0 0 40%;
+ }
+ 
+ .flex-30 {
+    flex: 0 0 30%;
+ }
+ 
+ .flex-20 {
+    flex: 0 0 20%;
+ }
+ 
+ .flex-10 {
+    flex: 0 0 10%;
+ }
+ 
+ .width100 {
+    width: 100%;
+  }
+ 
+  .gap10 {
+    gap: 10px;
+  }
+ 
+ .wrap {
+    flex-wrap: wrap;
+ }
+ 
+ .with-scroll {
+    width: 100%;
+    overflow-x: auto;
+ }
+ 
+ .slider-container {
+    position: relative;
+    width: 100%;
+ }
+ 
+ .slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+ }
+ 
+ .slider-section {
+    transition: transform 0.3s ease-out;
+ }
+ 
+ .slide {
+    flex-shrink: 0;
+    width: 100%;
+ }
+ 
+ .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: white;
+ }
+ 
+ .arrow:hover {
+    background-color: rgb(33, 79, 92);
+ }
+ 
+ /* CSS */
+ .button-25 {
+    background-color: #2A6271;
+    background-image: linear-gradient(#2A6271, #2A6271);
+    border: 1px solid #2A6271;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    line-height: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 11px 15px 12px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-25:hover {
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+    text-decoration: none;
+    transition-duration: .15s, .15s;
+  }
+  
+  .button-25:active {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+  }
+  
+  .button-25:disabled {
+    cursor: not-allowed;
+    opacity: .6;
+  }
+  
+  .button-25:disabled:active {
+    pointer-events: none;
+  }
+  
+  .button-25:disabled:hover {
+    box-shadow: none;
+  }
+ 
+ /*********** IDs ***********/
+ 
+ #title {
+    font-size: 40px;
+ }
+ 
+ #page-background {
+    background-color: #FAF5FF;
+ }
+ 
+ #header {
+    font-size: 58px;
+    margin-left: 20%;
+    margin-right: 20%;
+ }
+ 
+ #description {
+    font-size: 30px;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-left: 35%;
+    margin-right: 35%;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 10;
+ }
+ 
+ /*********** Media Queries ***********/
+ @media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+ @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+ @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+ @media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+ @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+ @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+ 
+ 
+ /* 
+ Notes:
+ - For mission statement section, we want image size and font size to scale with screen size
+ - For stories section, we want section to scale with screen size. However, once a view breakpoint is hit (e.g. scaled
+ to a certain smaller size), we want to have items in a column rather than a row
+ 
+ */
